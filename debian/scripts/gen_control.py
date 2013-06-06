@@ -45,7 +45,12 @@ def resolv_conflict(lang, pkgs):
     if i>=2:
         pkgs.remove(rmv[0])
         pkgs.remove(rmv[1])
-        pkgs.append("{} | {}".format(rmv[0], rmv[1]))
+        
+        # Ordenamos para que saber q siempre myspell quedara en el
+        # indice 1 de la lista y poder colocarlo de primero
+        rmv.sort()
+        
+        pkgs.append("{} | {}".format(rmv[1], rmv[0]))
         
     return pkgs
 
