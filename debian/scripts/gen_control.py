@@ -47,7 +47,7 @@ Architecture: all
 Depends:$pkgs_list,
         $${misc:Depends}
 Description: Package for '$lang' language in Canaima
- This metapackage privides the aditional software for $lang language.
+ This metapackage privides the additional software for $lang language.
 """)
 
 # Ensamblaje de la plantilla
