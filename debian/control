@@ -124,12 +124,11 @@ Description: Package for 'sq-al' language in Canaima
 Package: canaima-l10n-ru-ru
 Architecture: all
 Depends:manpages-ru,
-        hunspell-ru,
-        myspell-ru,
         aspell-ru,
         cunaguaro-l10n-ru,
         libreoffice-l10n-ru,
         libreoffice-help-ru,
+        hunspell-ru | myspell-ru,
         ${misc:Depends}
 Description: Package for 'ru-ru' language in Canaima
  This metapackage privides the additional software for ru-ru language.
@@ -238,12 +237,11 @@ Description: Package for 'ar-lb' language in Canaima
 Package: canaima-l10n-fr-be
 Architecture: all
 Depends:manpages-fr,
-        hunspell-fr,
-        myspell-fr,
         aspell-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
+        hunspell-fr | myspell-fr,
         ${misc:Depends}
 Description: Package for 'fr-be' language in Canaima
  This metapackage privides the additional software for fr-be language.
@@ -371,12 +369,11 @@ Description: Package for 'ts-za' language in Canaima
 
 Package: canaima-l10n-da-dk
 Architecture: all
-Depends:hunspell-da,
-        myspell-da,
-        aspell-da,
+Depends:aspell-da,
         cunaguaro-l10n-da,
         libreoffice-l10n-da,
         libreoffice-help-da,
+        hunspell-da | myspell-da,
         ${misc:Depends}
 Description: Package for 'da-dk' language in Canaima
  This metapackage privides the additional software for da-dk language.
@@ -400,10 +397,9 @@ Description: Package for 'en-bw' language in Canaima
 
 Package: canaima-l10n-en-us
 Architecture: all
-Depends:hunspell-en-us,
-        myspell-en-us,
-        aspell-en,
+Depends:aspell-en,
         libreoffice-help-en-us,
+        hunspell-en-us | myspell-en-us,
         ${misc:Depends}
 Description: Package for 'en-us' language in Canaima
  This metapackage privides the additional software for en-us language.
@@ -426,12 +422,11 @@ Description: Package for 'ss-za' language in Canaima
 Package: canaima-l10n-hu-hu
 Architecture: all
 Depends:manpages-hu,
-        hunspell-hu,
-        myspell-hu,
         aspell-hu,
         cunaguaro-l10n-hu,
         libreoffice-l10n-hu,
         libreoffice-help-hu,
+        hunspell-hu | myspell-hu,
         ${misc:Depends}
 Description: Package for 'hu-hu' language in Canaima
  This metapackage privides the additional software for hu-hu language.
@@ -462,12 +457,11 @@ Description: Package for 'es-mx' language in Canaima
 Package: canaima-l10n-de-de
 Architecture: all
 Depends:manpages-de,
-        hunspell-de-de,
-        myspell-de-de,
         aspell-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
+        hunspell-de-de | myspell-de-de,
         ${misc:Depends}
 Description: Package for 'de-de' language in Canaima
  This metapackage privides the additional software for de-de language.
@@ -800,12 +794,11 @@ Description: Package for 'ro-ro' language in Canaima
 
 Package: canaima-l10n-sv-se
 Architecture: all
-Depends:hunspell-sv-se,
-        myspell-sv-se,
-        aspell-sv,
+Depends:aspell-sv,
         cunaguaro-l10n-sv-se,
         libreoffice-l10n-sv,
         libreoffice-help-sv,
+        hunspell-sv-se | myspell-sv-se,
         ${misc:Depends}
 Description: Package for 'sv-se' language in Canaima
  This metapackage privides the additional software for sv-se language.
@@ -1060,12 +1053,11 @@ Description: Package for 'ar-dz' language in Canaima
 Package: canaima-l10n-de-ch
 Architecture: all
 Depends:manpages-de,
-        hunspell-de-ch,
-        myspell-de-ch,
         aspell-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
+        hunspell-de-ch | myspell-de-ch,
         ${misc:Depends}
 Description: Package for 'de-ch' language in Canaima
  This metapackage privides the additional software for de-ch language.
@@ -1137,12 +1129,11 @@ Description: Package for 'si-lk' language in Canaima
 Package: canaima-l10n-fr-ch
 Architecture: all
 Depends:manpages-fr,
-        hunspell-fr,
-        myspell-fr,
         aspell-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
+        hunspell-fr | myspell-fr,
         ${misc:Depends}
 Description: Package for 'fr-ch' language in Canaima
  This metapackage privides the additional software for fr-ch language.
@@ -1162,12 +1153,11 @@ Description: Package for 'it-ch' language in Canaima
 Package: canaima-l10n-fr-ca
 Architecture: all
 Depends:manpages-fr,
-        hunspell-fr,
-        myspell-fr,
         aspell-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
+        hunspell-fr | myspell-fr,
         ${misc:Depends}
 Description: Package for 'fr-ca' language in Canaima
  This metapackage privides the additional software for fr-ca language.
@@ -1244,12 +1234,11 @@ Description: Package for 'mn-mn' language in Canaima
 Package: canaima-l10n-fr-lu
 Architecture: all
 Depends:manpages-fr,
-        hunspell-fr,
-        myspell-fr,
         aspell-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
+        hunspell-fr | myspell-fr,
         ${misc:Depends}
 Description: Package for 'fr-lu' language in Canaima
  This metapackage privides the additional software for fr-lu language.
@@ -1267,12 +1256,11 @@ Description: Package for 'ar-om' language in Canaima
 Package: canaima-l10n-de-at
 Architecture: all
 Depends:manpages-de,
-        hunspell-de-at,
-        myspell-de-at,
         aspell-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
+        hunspell-de-at | myspell-de-at,
         ${misc:Depends}
 Description: Package for 'de-at' language in Canaima
  This metapackage privides the additional software for de-at language.
@@ -1444,12 +1432,11 @@ Description: Package for 'csb-pl' language in Canaima
 Package: canaima-l10n-ru-ua
 Architecture: all
 Depends:manpages-ru,
-        hunspell-ru,
-        myspell-ru,
         aspell-ru,
         cunaguaro-l10n-ru,
         libreoffice-l10n-ru,
         libreoffice-help-ru,
+        hunspell-ru | myspell-ru,
         ${misc:Depends}
 Description: Package for 'ru-ua' language in Canaima
  This metapackage privides the additional software for ru-ua language.
@@ -1563,12 +1550,11 @@ Description: Package for 'en-sg' language in Canaima
 Package: canaima-l10n-fr-fr
 Architecture: all
 Depends:manpages-fr,
-        hunspell-fr,
-        myspell-fr,
         aspell-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
+        hunspell-fr | myspell-fr,
         ${misc:Depends}
 Description: Package for 'fr-fr' language in Canaima
  This metapackage privides the additional software for fr-fr language.

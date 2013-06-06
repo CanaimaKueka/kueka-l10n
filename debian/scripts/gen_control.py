@@ -19,14 +19,36 @@
 from string import Template
 import os
 
+MYDIR = os.path.dirname(os.path.realpath(__file__))
+
 I18N_PACKAGES = None
-
-mydir = os.path.dirname(os.path.realpath(__file__))
-
 if not I18N_PACKAGES:
-    f = open(mydir + '/locales.dict', 'r')
+    f = open(MYDIR + '/locales.dict', 'r')
     data = f.read()
     I18N_PACKAGES = eval(data)
+
+
+def resolv_conflict(lang, pkgs):
+    '''Resuelve el conflicto generado entre hunspell y myspell que no 
+    permite instalarlos juntos. Para resolverlos concatena ambas
+    dependencias en una sentencia de selección como
+    (myspell-xx-xx | hunspell-xx-xx)'''
+    
+    i=0
+    rmv=[]
+
+    for p in pkgs:
+        if 'myspell' in p or 'hunspell' in p:
+            i+=1
+            rmv.append(p)
+
+    if i>=2:
+        pkgs.remove(rmv[0])
+        pkgs.remove(rmv[1])
+        pkgs.append("{} | {}".format(rmv[0], rmv[1]))
+        
+    return pkgs
+
 
 # Cabecera de la plantilla
 tmplt_head = """Source: canaima-l10n
@@ -54,8 +76,11 @@ Description: Package for '$lang' language in Canaima
 tmplt_list = ''
 for lang in I18N_PACKAGES:
     if len(I18N_PACKAGES[lang]) > 0:
+        
+        orig_list = resolv_conflict(lang, I18N_PACKAGES[lang])
+        
         pkg_list = ''
-        for pkg in I18N_PACKAGES[lang]:
+        for pkg in orig_list:
             if pkg_list == '':
                 pkg_list = pkg
             else:
