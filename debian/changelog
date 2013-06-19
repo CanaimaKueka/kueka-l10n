@@ -1,3 +1,16 @@
+canaima-l10n (4.0+2) kerepakupai; urgency=low
+
+  * [42a4577] Corriendo Makefile desde debian/rules
+  * [e5da616] Corrigiendo plantilla en gen_control.py
+  * [863754a] Corrigiendo a los paquetes dependencias a si mismos
+  * [7a2c6be] Agregando dependencias para python
+  * [2d9679b] Corrigiendo build-depends
+  * [4480c05] Corrigiendo campo de dependencias
+  * [015debb] Agregando la instalación del archivo l10n_pkgs.dict
+  * [e9eb923] Moviendo arichivo .install
+
+ -- Erick Birbe <erickcion@gmail.com>  Wed, 19 Jun 2013 13:54:50 -0430
+
 canaima-l10n (4.0+1) kerepakupai; urgency=low
 
   * [4e943e9] Agreagndo paquete con datos de idiomas 'canaima-l10n'
