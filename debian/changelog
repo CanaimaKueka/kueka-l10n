@@ -1,3 +1,9 @@
+canaima-l10n (4.0+1) kerepakupai; urgency=low
+
+  * [4e943e9] Agreagndo paquete con datos de idiomas 'canaima-l10n'
+
+ -- Erick Birbe <erickcion@gmail.com>  Wed, 19 Jun 2013 10:11:15 -0430
+
 canaima-l10n (4.0) kerepakupai; urgency=low
 
   * Creando paquete de traducciones adicionales para Canaima 4.0
