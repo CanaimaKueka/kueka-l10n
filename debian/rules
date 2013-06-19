@@ -1,4 +1,10 @@
 #!/usr/bin/make -f
 
+PKG_NAME := canaima-l10n
+
 %:
-	dh $@
+	dh ${@}
+
+
+override_dh_auto_install:
+	$(MAKE) DESTDIR=$(CURDIR)/debian/$(PKG_NAME) install
