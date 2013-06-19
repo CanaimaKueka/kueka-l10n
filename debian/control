@@ -2,8 +2,8 @@ Source: canaima-l10n
 Section: metapackages
 Priority: optional
 Maintainer: Erick Birbe <erickcion@gmail.com>
-Build-Depends: debhelper (>= 9),
-	${python:Depends}
+Build-Depends: python,
+	debhelper (>= 9)
 Standards-Version: 3.9.4
 Homepage: http://canaima.softwarelibre.gob.ve/
 Vcs-Git: git://git.canaima.sotfwarelibre.gob.ve/canaima-l10n.git
