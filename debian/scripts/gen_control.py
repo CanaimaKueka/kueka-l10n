@@ -59,7 +59,8 @@ tmplt_head = """Source: canaima-l10n
 Section: metapackages
 Priority: optional
 Maintainer: Erick Birbe <erickcion@gmail.com>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9),
+	${python:Depends}
 Standards-Version: 3.9.4
 Homepage: http://canaima.softwarelibre.gob.ve/
 Vcs-Git: git://git.canaima.sotfwarelibre.gob.ve/canaima-l10n.git
@@ -68,6 +69,7 @@ Vcs-Browser: http://git.canaima.softwarelibre.gob.ve/?p=canaima-l10n.git;a=tree
 Package: canaima-l10n
 Architecture: all
 Depends:python-notify,
+	${python:Depends}
         ${misc:Depends}
 Description: Check for language packs installation in Canaima GNU/Linux
  This package help users to install complete package support in Canaima
