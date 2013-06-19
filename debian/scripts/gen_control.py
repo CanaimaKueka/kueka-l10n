@@ -15,6 +15,10 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+#
+# Este script genera automáticamente el archivo 'debian/control' para 
+# hacer el empaquetado. Los valores son tomados del archivo locales.dict
 
 from string import Template
 import os
@@ -23,35 +27,30 @@ MYDIR = os.path.dirname(os.path.realpath(__file__))
 
 I18N_PACKAGES = None
 if not I18N_PACKAGES:
-    f = open(MYDIR + '/locales.dict', 'r')
+    f = open(MYDIR + '/../l10n_pkgs.dict', 'r')
     data = f.read()
     I18N_PACKAGES = eval(data)
 
 
-def resolv_conflict(lang, pkgs):
+def prepare_condition(pkgs):
     '''Resuelve el conflicto generado entre hunspell y myspell que no 
     permite instalarlos juntos. Para resolverlos concatena ambas
     dependencias en una sentencia de selección como
     (myspell-xx-xx | hunspell-xx-xx)'''
-    
-    i=0
-    rmv=[]
-
-    for p in pkgs:
-        if 'myspell' in p or 'hunspell' in p:
-            i+=1
-            rmv.append(p)
-
-    if i>=2:
-        pkgs.remove(rmv[0])
-        pkgs.remove(rmv[1])
-        
-        # Ordenamos para que saber q siempre myspell quedara en el
-        # indice 1 de la lista y poder colocarlo de primero
-        rmv.sort()
-        
-        pkgs.append("{} | {}".format(rmv[1], rmv[0]))
-        
+    i = 0
+    for item in pkgs:
+        if type(item) is type([]):
+            condition = ""
+            len_i=len(item)
+            k = 0
+            for p in item:
+                if k > 0 and k < len_i:
+                    condition += ' | '
+                condition += p
+                k += 1
+            pkgs[i] = condition
+            
+        i += 1
     return pkgs
 
 
@@ -65,6 +64,14 @@ Standards-Version: 3.9.4
 Homepage: http://canaima.softwarelibre.gob.ve/
 Vcs-Git: git://git.canaima.sotfwarelibre.gob.ve/canaima-l10n.git
 Vcs-Browser: http://git.canaima.softwarelibre.gob.ve/?p=canaima-l10n.git;a=tree
+
+Package: canaima-l10n
+Architecture: all
+Depends:python-notify,
+        $${misc:Depends}
+Description: Check for language packs installation in Canaima GNU/Linux
+ This package help users to install complete package support in Canaima
+ GNU/Linux.
 """
 
 # Plantilla de los paquetes a generar
@@ -80,10 +87,8 @@ Description: Package for '$lang' language in Canaima
 # Ensamblaje de la plantilla
 tmplt_list = ''
 for lang in I18N_PACKAGES:
-    if len(I18N_PACKAGES[lang]) > 0:
-        
-        orig_list = resolv_conflict(lang, I18N_PACKAGES[lang])
-        
+    if len(I18N_PACKAGES[lang]) > 0:        
+        orig_list = prepare_condition(I18N_PACKAGES[lang])
         pkg_list = ''
         for pkg in orig_list:
             if pkg_list == '':
