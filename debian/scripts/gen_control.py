@@ -68,7 +68,7 @@ Vcs-Browser: http://git.canaima.softwarelibre.gob.ve/?p=canaima-l10n.git;a=tree
 Package: canaima-l10n
 Architecture: all
 Depends:python-notify,
-        $${misc:Depends}
+        ${misc:Depends}
 Description: Check for language packs installation in Canaima GNU/Linux
  This package help users to install complete package support in Canaima
  GNU/Linux.
