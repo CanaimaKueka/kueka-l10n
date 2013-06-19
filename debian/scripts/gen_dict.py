@@ -54,7 +54,6 @@ if __name__ == "__main__":
     for lang in sorted(I18N_PACKAGES.iterkeys()):
         if len(I18N_PACKAGES[lang]) > 0:
             orig_list = resolv_conflict(I18N_PACKAGES[lang])
-            orig_list.append('canaima-l10n-' + lang)
             orig_list.sort()
             print "\t'{0}': {1},".format(lang, orig_list)
     print "}"
