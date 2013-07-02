@@ -1,3 +1,13 @@
+canaima-l10n (4.0+3) kerepakupai; urgency=low
+
+  * [128390d] Quitando exitosamente la aplicación cuando el usuario cierra la notificación.
+    En otras oportunidades el hilo de la notifiacción seguía activo
+    luego de cerrar la notificación, lo cual mantenia un proceso
+    abierto en la memoria del sistema.
+  * [be80089] Configurando inicio automatico de check-l10n.py
+
+ -- Erick Birbe <erickcion@gmail.com>  Tue, 02 Jul 2013 15:34:18 -0430
+
 canaima-l10n (4.0+2) kerepakupai; urgency=low
 
   * [42a4577] Corriendo Makefile desde debian/rules
