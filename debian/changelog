@@ -1,6 +1,14 @@
+canaima-l10n (4.0+4) kerepakupai; urgency=low
+
+  * [deddf4e] Agregando soporte a traducciones
+  * [75acc4a] Eliminando salida innecesaria
+
+ -- Erick Birbe <erickcion@gmail.com>  Tue, 02 Jul 2013 17:35:59 -0430
+
 canaima-l10n (4.0+3) kerepakupai; urgency=low
 
-  * [128390d] Quitando exitosamente la aplicación cuando el usuario cierra la notificación.
+  * [128390d] Quitando exitosamente la aplicación cuando el usuario cierra
+    la notificación.
     En otras oportunidades el hilo de la notifiacción seguía activo
     luego de cerrar la notificación, lo cual mantenia un proceso
     abierto en la memoria del sistema.
