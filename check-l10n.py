@@ -69,6 +69,10 @@ def is_lang_installed(lang):
 def install(n, action, lang):
 	pkg_name = get_pkg_name(lang)
 	subprocess.call(["software-center", pkg_name])
+	quit_notify(n)
+
+
+def quit_notify(widget):
 	if MAIN_LOOP.is_running():
 		MAIN_LOOP.quit()
 
@@ -78,6 +82,7 @@ def main():
 	if is_lang_available(lang) and not is_lang_installed(lang):
 		n = pynotify.Notification("Idioma", "Su sistema soporta algunas \
 traducciones adicionales pero aún no están instaladas.")
+		n.connect("closed", quit_notify)
 		n.set_urgency(pynotify.URGENCY_NORMAL)
 		n.set_timeout(pynotify.EXPIRES_NEVER)
 		n.add_action("install", "Instalar", install, lang)
