@@ -42,7 +42,6 @@ uninstall:
 
 
 clean: clean-mo-files
-	@echo "No se hace nada"
 
 
 distclean:
