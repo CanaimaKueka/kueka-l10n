@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Erick Birbe <erickcion@gmail.com>
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: canaima-l10n\n"
+"Report-Msgid-Bugs-To: desarrolladores@canaima.softwarelibre.gob.ve\n"
+"POT-Creation-Date: 2013-07-02 17:11-0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: check-l10n.py:68
+msgid "{} is not available."
+msgstr ""
+
+#: check-l10n.py:71
+msgid "{} is available."
+msgstr ""
+
+#: check-l10n.py:80
+msgid "{} is not installed."
+msgstr ""
+
+#: check-l10n.py:83
+msgid "{} is installed."
+msgstr ""
+
+#: check-l10n.py:102
+msgid "Additional Translations"
+msgstr ""
+
+#: check-l10n.py:102
+msgid ""
+"Your system support some additional translations but they are not yet "
+"installed."
+msgstr ""
+
+#: check-l10n.py:107
+msgid "Install Now"
+msgstr ""
+
+#: check-l10n.py:114
+msgid "Can't load the icon for notification"
+msgstr ""

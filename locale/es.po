@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Erick Birbe <erickcion@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../\n"
+
+#: check-l10n.py:68
+msgid "{} is not available."
+msgstr "{} no está disponible."
+
+#: check-l10n.py:71
+msgid "{} is available."
+msgstr "{} está disponible."
+
+#: check-l10n.py:80
+msgid "{} is not installed."
+msgstr "{} no está instalado."
+
+#: check-l10n.py:83
+msgid "{} is installed."
+msgstr "{} está instalado."
+
+#: check-l10n.py:102
+msgid "Additional Translations"
+msgstr "Traducciones Adicionales"
+
+#: check-l10n.py:102
+msgid "Your system support some additional translations but they are not yet installed."
+msgstr "Su sistema soporta algunas traducciones adicionales pero aun no están instaladas."
+
+#: check-l10n.py:107
+msgid "Install Now"
+msgstr "Instalar Ahora"
+
+#: check-l10n.py:114
+msgid "Can't load the icon for notification"
+msgstr "No se puede cargar el icono para la notificacion"
+

@@ -24,9 +24,27 @@
 
 
 import gobject
+import gettext
+import gtk
 import os
 import pynotify
 import subprocess
+
+# Busqueda del directorio por defecto para los locales
+lc_dir = os.path.join(os.path.dirname(__file__), 'locale')
+if os.path.exists(lc_dir):
+    GETTEXT_LOCALEDIR = lc_dir
+else:
+    GETTEXT_LOCALEDIR = '/usr/share/locale'  # Directorio por defecto
+
+GETTEXT_DOMAIN = "canaima-l10n"
+
+
+def gettext_install():
+    gettext.install(GETTEXT_DOMAIN, GETTEXT_LOCALEDIR)
+
+
+gettext_install()
 
 
 APP_NAME = "canima-l10n"
@@ -47,10 +65,10 @@ def is_lang_available(lang):
 	cmd =  "apt-cache pkgnames --generate | grep ^{0}$ | wc -l".format(pkg_name)
 	rslt = subprocess.check_output(cmd, shell=True).strip()
 	if rslt == "0":
-		print "{} no está disponible.".format(pkg_name)
+		print _("{} is not available.").format(pkg_name)
 		return False
 	else:
-		print "{} si está disponible.".format(pkg_name)
+		print _("{} is available.").format(pkg_name)
 		return True
 
 
@@ -59,13 +77,13 @@ def is_lang_installed(lang):
 	cmd = "aptitude search ~i^{0}$ | wc -l".format(pkg_name)
 	rslt = subprocess.check_output(cmd, shell=True).strip()
 	if rslt == "0":
-		print "{} no está instalado.".format(pkg_name)
+		print _("{} is not installed.").format(pkg_name)
 		return False
 	else:
-		print "{} si está instalado.".format(pkg_name)
+		print _("{} is installed.").format(pkg_name)
 		return True
 
-
+#TODO: Hacer esto compatible con otros gestores de paquetes
 def install(n, action, lang):
 	pkg_name = get_pkg_name(lang)
 	subprocess.call(["software-center", pkg_name])
@@ -80,12 +98,21 @@ def quit_notify(widget):
 def main():
 	lang = get_language()
 	if is_lang_available(lang) and not is_lang_installed(lang):
-		n = pynotify.Notification("Idioma", "Su sistema soporta algunas \
-traducciones adicionales pero aún no están instaladas.")
+
+		n = pynotify.Notification(_("Additional Translations"), _("Your system \
+support some additional translations but they are not yet installed."))
 		n.connect("closed", quit_notify)
 		n.set_urgency(pynotify.URGENCY_NORMAL)
 		n.set_timeout(pynotify.EXPIRES_NEVER)
-		n.add_action("install", "Instalar", install, lang)
+		n.add_action("install", _("Install Now"), install, lang)
+		
+		try:
+			helper = gtk.Button()
+			icon = helper.render_icon(gtk.STOCK_DIALOG_INFO, gtk.ICON_SIZE_DIALOG)
+			n.set_icon_from_pixbuf(icon)
+		except:
+			print _("Can't load the icon for notification")
+			
 		n.show()
 		MAIN_LOOP.run()
 
