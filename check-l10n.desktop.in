@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Aditional Language Packages
+Name[es]=Paquetes adicionales de idioma
+#
+GenericName=Aditional Language Packages
+GenericName[es]=Paquetes adicionales de idioma
+#
+Comment=Checks if the system needs some aditional translations packages.
+Comment[es]=Verifica si el sistema necesita algunos paquetes de traducciones adicionales.
+#
+Exec=/usr/lib/canaima-l10n/check-l10n.py
+Terminal=false
+Type=Application
+StartupNotify=false
