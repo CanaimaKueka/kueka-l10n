@@ -1,3 +1,9 @@
+canaima-l10n (4.0+5) kerepakupai; urgency=low
+
+  * [908662a] Comprobando cual variable de entorno de locales existe
+
+ -- Erick Birbe <erickcion@gmail.com>  Fri, 12 Jul 2013 16:54:49 -0430
+
 canaima-l10n (4.0+4) kerepakupai; urgency=low
 
   * [deddf4e] Agregando soporte a traducciones
