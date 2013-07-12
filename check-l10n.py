@@ -52,6 +52,14 @@ MAIN_LOOP = gobject.MainLoop()
 
 
 def get_language():
+	if "LANGUAGE" in os.environ:
+		locale=os.environ["LANGUAGE"]
+	elif "LANG" in os.environ:
+		locale=os.environ["LANG"]
+	else:
+		# An stupid string
+		locale="not_FOUND.locale"
+
 	lang = os.environ["LANG"].split(".")[0].lower().replace('_', '-')
 	return lang
 
