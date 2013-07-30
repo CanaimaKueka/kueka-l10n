@@ -1,3 +1,10 @@
+canaima-l10n (4.0+6) kerepakupai; urgency=low
+
+  * [ed4cb45] Quitando organizacion de lista definitiva
+  * [6591c16] Generando diccionario y control sin ordenar (sort)
+
+ -- Erick Birbe <erickcion@gmail.com>  Tue, 30 Jul 2013 15:19:34 -0430
+
 canaima-l10n (4.0+5) kerepakupai; urgency=low
 
   * [908662a] Comprobando cual variable de entorno de locales existe
