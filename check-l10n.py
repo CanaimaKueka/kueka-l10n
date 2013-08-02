@@ -60,7 +60,7 @@ def get_language():
 		# An stupid string
 		locale="not_FOUND.locale"
 
-	lang = os.environ["LANG"].split(".")[0].lower().replace('_', '-')
+	lang = locale.split(".")[0].lower().replace('_', '-')
 	return lang
 
 
