@@ -1,3 +1,10 @@
+canaima-l10n (4.0+8) kerepakupai; urgency=low
+
+  * [4befbfb] Detectando el idioma desde python locale
+  * [28583d3] Agregando paquetes de lenguajes para Guacharo
+
+ -- Erick Birbe <erickcion@gmail.com>  Fri, 30 Aug 2013 15:05:50 -0430
+
 canaima-l10n (4.0+7) kerepakupai; urgency=low
 
   * [405302b] Llamando variable locale donde estaba os.eviron[LANG]
