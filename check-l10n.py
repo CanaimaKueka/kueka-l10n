@@ -26,6 +26,7 @@
 import gobject
 import gettext
 import gtk
+import locale
 import os
 import pynotify
 import subprocess
@@ -52,16 +53,7 @@ MAIN_LOOP = gobject.MainLoop()
 
 
 def get_language():
-	if "LANGUAGE" in os.environ:
-		locale=os.environ["LANGUAGE"]
-	elif "LANG" in os.environ:
-		locale=os.environ["LANG"]
-	else:
-		# An stupid string
-		locale="not_FOUND.locale"
-
-	lang = locale.split(".")[0].lower().replace('_', '-')
-	return lang
+	return locale.getdefaultlocale()[0].replace("_","-").lower()
 
 
 def get_pkg_name(lang):
