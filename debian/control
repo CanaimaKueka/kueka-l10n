@@ -22,6 +22,7 @@ Package: canaima-l10n-sl-si
 Architecture: all
 Depends:myspell-sl,
         aspell-sl,
+        guacharo-l10n-sl,
         cunaguaro-l10n-sl,
         libreoffice-l10n-sl,
         libreoffice-help-sl,
@@ -38,7 +39,8 @@ Description: Package for 'en-ng' language in Canaima
 
 Package: canaima-l10n-sq-mk
 Architecture: all
-Depends:cunaguaro-l10n-sq,
+Depends:guacharo-l10n-sq,
+        cunaguaro-l10n-sq,
         ${misc:Depends}
 Description: Package for 'sq-mk' language in Canaima
  This metapackage privides the additional software for sq-mk language.
@@ -55,6 +57,7 @@ Architecture: all
 Depends:manpages-pt,
         myspell-pt-br,
         aspell-pt-br,
+        guacharo-l10n-pt-br,
         cunaguaro-l10n-pt-br,
         libreoffice-l10n-pt-br,
         libreoffice-help-pt-br,
@@ -66,6 +69,7 @@ Package: canaima-l10n-ca-fr
 Architecture: all
 Depends:myspell-ca,
         aspell-ca,
+        guacharo-l10n-ca,
         cunaguaro-l10n-ca,
         libreoffice-l10n-ca,
         libreoffice-help-ca,
@@ -83,6 +87,7 @@ Description: Package for 'en-ag' language in Canaima
 Package: canaima-l10n-zh-cn
 Architecture: all
 Depends:manpages-zh,
+        guacharo-l10n-zh-cn,
         cunaguaro-l10n-zh-cn,
         libreoffice-l10n-zh-cn,
         libreoffice-help-zh-cn,
@@ -93,6 +98,7 @@ Description: Package for 'zh-cn' language in Canaima
 Package: canaima-l10n-ko-kr
 Architecture: all
 Depends:hunspell-ko,
+        guacharo-l10n-ko,
         cunaguaro-l10n-ko,
         libreoffice-l10n-ko,
         libreoffice-help-ko,
@@ -117,7 +123,8 @@ Description: Package for 'en-au' language in Canaima
 
 Package: canaima-l10n-sq-al
 Architecture: all
-Depends:cunaguaro-l10n-sq,
+Depends:guacharo-l10n-sq,
+        cunaguaro-l10n-sq,
         ${misc:Depends}
 Description: Package for 'sq-al' language in Canaima
  This metapackage privides the additional software for sq-al language.
@@ -126,6 +133,7 @@ Package: canaima-l10n-ro-ro
 Architecture: all
 Depends:hunspell-ro,
         aspell-ro,
+        guacharo-l10n-ro,
         cunaguaro-l10n-ro,
         libreoffice-l10n-ro,
         ${misc:Depends}
@@ -136,6 +144,7 @@ Package: canaima-l10n-el-gr
 Architecture: all
 Depends:myspell-el-gr,
         aspell-el,
+        guacharo-l10n-el,
         cunaguaro-l10n-el,
         libreoffice-l10n-el,
         libreoffice-help-el,
@@ -148,6 +157,7 @@ Architecture: all
 Depends:manpages-it,
         myspell-it,
         aspell-it,
+        guacharo-l10n-it,
         cunaguaro-l10n-it,
         libreoffice-l10n-it,
         libreoffice-help-it,
@@ -159,6 +169,7 @@ Package: canaima-l10n-ar-ae
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -176,6 +187,7 @@ Package: canaima-l10n-uk-ua
 Architecture: all
 Depends:myspell-uk,
         aspell-uk,
+        guacharo-l10n-uk,
         cunaguaro-l10n-uk,
         libreoffice-l10n-uk,
         ${misc:Depends}
@@ -185,6 +197,7 @@ Description: Package for 'uk-ua' language in Canaima
 Package: canaima-l10n-vi-vn
 Architecture: all
 Depends:hunspell-vi,
+        guacharo-l10n-vi,
         cunaguaro-l10n-vi,
         libreoffice-l10n-vi,
         libreoffice-help-vi,
@@ -196,6 +209,7 @@ Package: canaima-l10n-lt-lt
 Architecture: all
 Depends:myspell-lt,
         aspell-lt,
+        guacharo-l10n-lt,
         cunaguaro-l10n-lt,
         libreoffice-l10n-lt,
         ${misc:Depends}
@@ -206,6 +220,7 @@ Package: canaima-l10n-ar-qa
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -225,6 +240,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -250,6 +266,7 @@ Package: canaima-l10n-ar-lb
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -260,6 +277,7 @@ Package: canaima-l10n-fr-be
 Architecture: all
 Depends:manpages-fr,
         aspell-fr,
+        guacharo-l10n-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
@@ -273,6 +291,7 @@ Architecture: all
 Depends:manpages-it,
         myspell-it,
         aspell-it,
+        guacharo-l10n-it,
         cunaguaro-l10n-it,
         libreoffice-l10n-it,
         libreoffice-help-it,
@@ -284,6 +303,7 @@ Package: canaima-l10n-ar-ly
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -294,6 +314,7 @@ Package: canaima-l10n-en-gb
 Architecture: all
 Depends:myspell-en-gb,
         aspell-en,
+        guacharo-l10n-en-gb,
         cunaguaro-l10n-en-gb,
         libreoffice-l10n-en-gb,
         libreoffice-help-en-gb,
@@ -307,6 +328,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -319,6 +341,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -331,6 +354,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -343,6 +367,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -400,6 +425,7 @@ Description: Package for 'ts-za' language in Canaima
 Package: canaima-l10n-da-dk
 Architecture: all
 Depends:aspell-da,
+        guacharo-l10n-da,
         cunaguaro-l10n-da,
         libreoffice-l10n-da,
         libreoffice-help-da,
@@ -412,6 +438,7 @@ Package: canaima-l10n-ar-bh
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -453,6 +480,7 @@ Package: canaima-l10n-hu-hu
 Architecture: all
 Depends:manpages-hu,
         aspell-hu,
+        guacharo-l10n-hu,
         cunaguaro-l10n-hu,
         libreoffice-l10n-hu,
         libreoffice-help-hu,
@@ -465,6 +493,7 @@ Package: canaima-l10n-sk-sk
 Architecture: all
 Depends:myspell-sk,
         aspell-sk,
+        guacharo-l10n-sk,
         cunaguaro-l10n-sk,
         libreoffice-l10n-sk,
         libreoffice-help-sk,
@@ -475,6 +504,7 @@ Description: Package for 'sk-sk' language in Canaima
 Package: canaima-l10n-zh-tw
 Architecture: all
 Depends:manpages-zh,
+        guacharo-l10n-zh-tw,
         cunaguaro-l10n-zh-tw,
         libreoffice-l10n-zh-tw,
         libreoffice-help-zh-tw,
@@ -488,6 +518,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-mx,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -498,6 +529,7 @@ Package: canaima-l10n-de-de
 Architecture: all
 Depends:manpages-de,
         aspell-de,
+        guacharo-l10n-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
@@ -512,6 +544,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -522,6 +555,7 @@ Package: canaima-l10n-he-il
 Architecture: all
 Depends:myspell-he,
         aspell-he,
+        guacharo-l10n-he,
         cunaguaro-l10n-he,
         libreoffice-l10n-he,
         ${misc:Depends}
@@ -541,6 +575,7 @@ Package: canaima-l10n-ar-eg
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -559,6 +594,7 @@ Architecture: all
 Depends:manpages-pt,
         myspell-pt-pt,
         aspell-pt-pt,
+        guacharo-l10n-pt-pt,
         cunaguaro-l10n-pt-pt,
         libreoffice-l10n-pt,
         libreoffice-help-pt,
@@ -569,6 +605,7 @@ Description: Package for 'pt-pt' language in Canaima
 Package: canaima-l10n-gl-es
 Architecture: all
 Depends:hunspell-gl-es,
+        guacharo-l10n-gl,
         cunaguaro-l10n-gl,
         libreoffice-l10n-gl,
         libreoffice-help-gl,
@@ -580,6 +617,7 @@ Package: canaima-l10n-fr-fr
 Architecture: all
 Depends:manpages-fr,
         aspell-fr,
+        guacharo-l10n-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
@@ -608,6 +646,7 @@ Package: canaima-l10n-ar-ye
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -617,6 +656,7 @@ Description: Package for 'ar-ye' language in Canaima
 Package: canaima-l10n-pa-in
 Architecture: all
 Depends:aspell-pa,
+        guacharo-l10n-pa-in,
         cunaguaro-l10n-pa-in,
         libreoffice-l10n-pa-in,
         ${misc:Depends}
@@ -627,6 +667,7 @@ Package: canaima-l10n-nl-be
 Architecture: all
 Depends:myspell-nl,
         aspell-nl,
+        guacharo-l10n-nl,
         cunaguaro-l10n-nl,
         libreoffice-l10n-nl,
         libreoffice-help-nl,
@@ -638,6 +679,7 @@ Package: canaima-l10n-ga-ie
 Architecture: all
 Depends:myspell-ga,
         aspell-ga,
+        guacharo-l10n-ga-ie,
         cunaguaro-l10n-ga-ie,
         libreoffice-l10n-ga,
         ${misc:Depends}
@@ -650,6 +692,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -670,6 +713,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-cl,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -704,6 +748,7 @@ Package: canaima-l10n-de-be
 Architecture: all
 Depends:manpages-de,
         aspell-de,
+        guacharo-l10n-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
@@ -717,6 +762,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -732,7 +778,8 @@ Description: Package for 'lg-ug' language in Canaima
 
 Package: canaima-l10n-id-id
 Architecture: all
-Depends:cunaguaro-l10n-id,
+Depends:guacharo-l10n-id,
+        cunaguaro-l10n-id,
         libreoffice-l10n-id,
         ${misc:Depends}
 Description: Package for 'id-id' language in Canaima
@@ -749,6 +796,7 @@ Package: canaima-l10n-ca-it
 Architecture: all
 Depends:myspell-ca,
         aspell-ca,
+        guacharo-l10n-ca,
         cunaguaro-l10n-ca,
         libreoffice-l10n-ca,
         libreoffice-help-ca,
@@ -759,6 +807,7 @@ Description: Package for 'ca-it' language in Canaima
 Package: canaima-l10n-be-by
 Architecture: all
 Depends:hunspell-be,
+        guacharo-l10n-be,
         cunaguaro-l10n-be,
         libreoffice-l10n-be,
         ${misc:Depends}
@@ -769,6 +818,7 @@ Package: canaima-l10n-bg-bg
 Architecture: all
 Depends:myspell-bg,
         aspell-bg,
+        guacharo-l10n-bg,
         cunaguaro-l10n-bg,
         libreoffice-l10n-bg,
         ${misc:Depends}
@@ -788,6 +838,7 @@ Package: canaima-l10n-ar-kw
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -814,6 +865,7 @@ Package: canaima-l10n-ru-ru
 Architecture: all
 Depends:manpages-ru,
         aspell-ru,
+        guacharo-l10n-ru,
         cunaguaro-l10n-ru,
         libreoffice-l10n-ru,
         libreoffice-help-ru,
@@ -825,6 +877,7 @@ Description: Package for 'ru-ru' language in Canaima
 Package: canaima-l10n-sv-se
 Architecture: all
 Depends:aspell-sv,
+        guacharo-l10n-sv-se,
         cunaguaro-l10n-sv-se,
         libreoffice-l10n-sv,
         libreoffice-help-sv,
@@ -835,7 +888,8 @@ Description: Package for 'sv-se' language in Canaima
 
 Package: canaima-l10n-eu-fr
 Architecture: all
-Depends:cunaguaro-l10n-eu,
+Depends:guacharo-l10n-eu,
+        cunaguaro-l10n-eu,
         libreoffice-l10n-eu,
         libreoffice-help-eu,
         ${misc:Depends}
@@ -845,6 +899,7 @@ Description: Package for 'eu-fr' language in Canaima
 Package: canaima-l10n-sr-me
 Architecture: all
 Depends:hunspell-sr,
+        guacharo-l10n-sr,
         cunaguaro-l10n-sr,
         libreoffice-l10n-sr,
         ${misc:Depends}
@@ -857,6 +912,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-ar,
+        guacharo-l10n-es-ar,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -869,6 +925,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -877,7 +934,8 @@ Description: Package for 'es-co' language in Canaima
 
 Package: canaima-l10n-fy-nl
 Architecture: all
-Depends:cunaguaro-l10n-fy-nl,
+Depends:guacharo-l10n-fy-nl,
+        cunaguaro-l10n-fy-nl,
         ${misc:Depends}
 Description: Package for 'fy-nl' language in Canaima
  This metapackage privides the additional software for fy-nl language.
@@ -914,6 +972,7 @@ Description: Package for 'gv-gb' language in Canaima
 Package: canaima-l10n-br-fr
 Architecture: all
 Depends:aspell-br,
+        guacharo-l10n-br,
         cunaguaro-l10n-br,
         libreoffice-l10n-br,
         ${misc:Depends}
@@ -939,6 +998,7 @@ Description: Package for 'tg-tj' language in Canaima
 Package: canaima-l10n-gd-gb
 Architecture: all
 Depends:myspell-gd,
+        guacharo-l10n-gd,
         cunaguaro-l10n-gd,
         ${misc:Depends}
 Description: Package for 'gd-gb' language in Canaima
@@ -948,6 +1008,7 @@ Package: canaima-l10n-et-ee
 Architecture: all
 Depends:myspell-et,
         aspell-et,
+        guacharo-l10n-et,
         cunaguaro-l10n-et,
         libreoffice-l10n-et,
         libreoffice-help-et,
@@ -958,6 +1019,7 @@ Description: Package for 'et-ee' language in Canaima
 Package: canaima-l10n-bn-bd
 Architecture: all
 Depends:aspell-bn,
+        guacharo-l10n-bn-bd,
         cunaguaro-l10n-bn-bd,
         libreoffice-l10n-bn,
         ${misc:Depends}
@@ -969,6 +1031,7 @@ Architecture: all
 Depends:manpages-pl,
         myspell-pl,
         aspell-pl,
+        guacharo-l10n-pl,
         cunaguaro-l10n-pl,
         libreoffice-l10n-pl,
         libreoffice-help-pl,
@@ -979,6 +1042,7 @@ Description: Package for 'pl-pl' language in Canaima
 Package: canaima-l10n-ja-jp
 Architecture: all
 Depends:manpages-ja,
+        guacharo-l10n-ja,
         cunaguaro-l10n-ja,
         libreoffice-l10n-ja,
         libreoffice-help-ja,
@@ -1009,6 +1073,7 @@ Package: canaima-l10n-ar-iq
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1019,6 +1084,7 @@ Package: canaima-l10n-de-ch
 Architecture: all
 Depends:manpages-de,
         aspell-de,
+        guacharo-l10n-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
@@ -1040,6 +1106,7 @@ Package: canaima-l10n-ar-in
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1052,6 +1119,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -1072,6 +1140,7 @@ Package: canaima-l10n-ar-dz
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1084,6 +1153,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -1102,6 +1172,7 @@ Package: canaima-l10n-de-lu
 Architecture: all
 Depends:manpages-de,
         aspell-de,
+        guacharo-l10n-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
@@ -1113,6 +1184,7 @@ Package: canaima-l10n-ar-tn
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1131,6 +1203,7 @@ Package: canaima-l10n-nl-nl
 Architecture: all
 Depends:myspell-nl,
         aspell-nl,
+        guacharo-l10n-nl,
         cunaguaro-l10n-nl,
         libreoffice-l10n-nl,
         libreoffice-help-nl,
@@ -1142,6 +1215,7 @@ Package: canaima-l10n-ar-sa
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1158,7 +1232,8 @@ Description: Package for 'dz-bt' language in Canaima
 
 Package: canaima-l10n-si-lk
 Architecture: all
-Depends:cunaguaro-l10n-si,
+Depends:guacharo-l10n-si,
+        cunaguaro-l10n-si,
         libreoffice-l10n-si,
         ${misc:Depends}
 Description: Package for 'si-lk' language in Canaima
@@ -1168,6 +1243,7 @@ Package: canaima-l10n-fr-ch
 Architecture: all
 Depends:manpages-fr,
         aspell-fr,
+        guacharo-l10n-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
@@ -1188,6 +1264,7 @@ Package: canaima-l10n-fr-ca
 Architecture: all
 Depends:manpages-fr,
         aspell-fr,
+        guacharo-l10n-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
@@ -1199,6 +1276,7 @@ Description: Package for 'fr-ca' language in Canaima
 Package: canaima-l10n-el-cy
 Architecture: all
 Depends:aspell-el,
+        guacharo-l10n-el,
         cunaguaro-l10n-el,
         libreoffice-l10n-el,
         libreoffice-help-el,
@@ -1210,6 +1288,7 @@ Package: canaima-l10n-ca-es
 Architecture: all
 Depends:myspell-ca,
         aspell-ca,
+        guacharo-l10n-ca,
         cunaguaro-l10n-ca,
         libreoffice-l10n-ca,
         libreoffice-help-ca,
@@ -1221,6 +1300,7 @@ Package: canaima-l10n-fi-fi
 Architecture: all
 Depends:myspell-fi,
         aspell-fi,
+        guacharo-l10n-fi,
         cunaguaro-l10n-fi,
         libreoffice-l10n-fi,
         libreoffice-help-fi,
@@ -1239,6 +1319,7 @@ Package: canaima-l10n-cs-cz
 Architecture: all
 Depends:myspell-cs,
         aspell-cs,
+        guacharo-l10n-cs,
         cunaguaro-l10n-cs,
         libreoffice-l10n-cs,
         libreoffice-help-cs,
@@ -1252,6 +1333,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -1270,6 +1352,7 @@ Package: canaima-l10n-fr-lu
 Architecture: all
 Depends:manpages-fr,
         aspell-fr,
+        guacharo-l10n-fr,
         cunaguaro-l10n-fr,
         libreoffice-l10n-fr,
         libreoffice-help-fr,
@@ -1282,6 +1365,7 @@ Package: canaima-l10n-ar-om
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1292,6 +1376,7 @@ Package: canaima-l10n-de-at
 Architecture: all
 Depends:manpages-de,
         aspell-de,
+        guacharo-l10n-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
@@ -1303,6 +1388,7 @@ Description: Package for 'de-at' language in Canaima
 Package: canaima-l10n-tr-cy
 Architecture: all
 Depends:manpages-tr,
+        guacharo-l10n-tr,
         cunaguaro-l10n-tr,
         libreoffice-l10n-tr,
         libreoffice-help-tr,
@@ -1323,6 +1409,7 @@ Package: canaima-l10n-de-li
 Architecture: all
 Depends:manpages-de,
         aspell-de,
+        guacharo-l10n-de,
         cunaguaro-l10n-de,
         libreoffice-l10n-de,
         libreoffice-help-de,
@@ -1334,6 +1421,7 @@ Package: canaima-l10n-ar-sy
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1346,6 +1434,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -1363,6 +1452,7 @@ Package: canaima-l10n-ar-sd
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1375,6 +1465,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -1401,6 +1492,7 @@ Package: canaima-l10n-ar-jo
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1411,6 +1503,7 @@ Package: canaima-l10n-ar-ma
 Architecture: all
 Depends:hunspell-ar,
         aspell-ar,
+        guacharo-l10n-ar,
         cunaguaro-l10n-ar,
         libreoffice-l10n-ar,
         ${misc:Depends}
@@ -1428,6 +1521,7 @@ Package: canaima-l10n-nl-aw
 Architecture: all
 Depends:myspell-nl,
         aspell-nl,
+        guacharo-l10n-nl,
         cunaguaro-l10n-nl,
         libreoffice-l10n-nl,
         libreoffice-help-nl,
@@ -1456,6 +1550,7 @@ Package: canaima-l10n-ru-ua
 Architecture: all
 Depends:manpages-ru,
         aspell-ru,
+        guacharo-l10n-ru,
         cunaguaro-l10n-ru,
         libreoffice-l10n-ru,
         libreoffice-help-ru,
@@ -1467,6 +1562,7 @@ Description: Package for 'ru-ua' language in Canaima
 Package: canaima-l10n-is-is
 Architecture: all
 Depends:aspell-is,
+        guacharo-l10n-is,
         cunaguaro-l10n-is,
         libreoffice-l10n-is,
         ${misc:Depends}
@@ -1489,6 +1585,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -1505,6 +1602,7 @@ Description: Package for 'en-dk' language in Canaima
 Package: canaima-l10n-nn-no
 Architecture: all
 Depends:myspell-nn,
+        guacharo-l10n-nn-no,
         cunaguaro-l10n-nn-no,
         libreoffice-l10n-nn,
         ${misc:Depends}
@@ -1522,6 +1620,7 @@ Description: Package for 'fo-fo' language in Canaima
 Package: canaima-l10n-tr-tr
 Architecture: all
 Depends:manpages-tr,
+        guacharo-l10n-tr,
         cunaguaro-l10n-tr,
         libreoffice-l10n-tr,
         libreoffice-help-tr,
@@ -1564,6 +1663,7 @@ Description: Package for 'as-in' language in Canaima
 Package: canaima-l10n-sr-rs
 Architecture: all
 Depends:hunspell-sr,
+        guacharo-l10n-sr,
         cunaguaro-l10n-sr,
         libreoffice-l10n-sr,
         ${misc:Depends}
@@ -1624,6 +1724,7 @@ Package: canaima-l10n-eu-es
 Architecture: all
 Depends:hunspell-eu-es,
         aspell-eu-es,
+        guacharo-l10n-eu,
         cunaguaro-l10n-eu,
         libreoffice-l10n-eu,
         libreoffice-help-eu,
@@ -1634,6 +1735,7 @@ Description: Package for 'eu-es' language in Canaima
 Package: canaima-l10n-nb-no
 Architecture: all
 Depends:myspell-nb,
+        guacharo-l10n-nb-no,
         cunaguaro-l10n-nb-no,
         libreoffice-l10n-nb,
         ${misc:Depends}
@@ -1644,6 +1746,7 @@ Package: canaima-l10n-ca-ad
 Architecture: all
 Depends:myspell-ca,
         aspell-ca,
+        guacharo-l10n-ca,
         cunaguaro-l10n-ca,
         libreoffice-l10n-ca,
         libreoffice-help-ca,
@@ -1682,6 +1785,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
@@ -1690,7 +1794,8 @@ Description: Package for 'es-uy' language in Canaima
 
 Package: canaima-l10n-ast-es
 Architecture: all
-Depends:cunaguaro-l10n-ast,
+Depends:guacharo-l10n-ast,
+        cunaguaro-l10n-ast,
         libreoffice-l10n-ast,
         ${misc:Depends}
 Description: Package for 'ast-es' language in Canaima
@@ -1709,6 +1814,7 @@ Depends:manpages-es,
         myspell-es,
         aspell-es,
         cunaguaro-l10n-es-es,
+        guacharo-l10n-es-es,
         libreoffice-l10n-es,
         libreoffice-help-es,
         ${misc:Depends}
