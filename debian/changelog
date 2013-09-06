@@ -1,3 +1,10 @@
+canaima-l10n (4.0+9) kerepakupai; urgency=low
+
+  * [3d8bb01] Generando debian/control y debian/l10n_pkgs.dict con
+    guacharo
+
+ -- Erick Birbe <erickcion@gmail.com>  Fri, 06 Sep 2013 15:23:32 -0430
+
 canaima-l10n (4.0+8) kerepakupai; urgency=low
 
   * [4befbfb] Detectando el idioma desde python locale
